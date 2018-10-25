@@ -12,9 +12,10 @@ function nowServing(line) {
   }
 }
 
-function currentLine() {
+function currentLine(line) {
   if (line.length > 0) {
-    
+    var output = "The line is currently: "
+    "The line is currently: 1. Ada, 2. Grace"
   } else {
     return "The line is currently empty."
   }
