@@ -15,6 +15,9 @@ function nowServing(line) {
 function currentLine(line) {
   if (line.length > 0) {
     var output = "The line is currently: "
+    for (var i = 0; i < line.length; i++) {
+      output = output.concat("$(i+1). $(line[i]), ")
+    }
     "The line is currently: 1. Ada, 2. Grace"
   } else {
     return "The line is currently empty."
