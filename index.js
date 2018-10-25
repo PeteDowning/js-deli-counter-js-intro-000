@@ -19,7 +19,11 @@ function currentLine(line) {
     var output = "The line is currently: "
     for (var i = 0; i < line.length; i++) {
       var j = i + 1
-      output = output.concat(j + ". " + line[i] + ", ")
+      if (i < line.length - 1) {
+        output = output.concat(j + ". " + line[i] + ", ")
+      } else {
+        output = output.concat(j + ". " + line[i])
+      }
     }
     return output
   } else {
