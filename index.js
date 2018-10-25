@@ -18,7 +18,7 @@ function currentLine(line) {
     for (var i = 0; i < line.length; i++) {
       output = output.concat("$(i+1). $(line[i]), ")
     }
-    "The line is currently: 1. Ada, 2. Grace"
+    return output
   } else {
     return "The line is currently empty."
   }
